@@ -49,14 +49,17 @@ public class Toolbox878 {
      * Returns the area of a rectangle with the given w and h.
      */
     public static int surface(int w, int h) {
-        return 2 * (w + h);
+        return (w * h);
     }
 
     /**
      * Returns true if n is even, false otherwise.
      */
     public static boolean even(int n) {
-        return n % 2 != 0;
+        if (n % 2 != 0) {
+            return false;
+        }
+        return true;
     }
 
     /**
